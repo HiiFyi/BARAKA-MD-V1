@@ -672,7 +672,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `*BMW MD WELCOME MESSAGE*`;
+            let msg = `*SUJAY MD WELCOME MESSAGE*`;
             let membres = group.participants;
             for (let membre of membres) {
                 msg += ` \n❒ *Hey* 🖐️ @${membre.split("@")[0]} WELCOME TO OUR GROUP. \n\n`;
@@ -815,7 +815,7 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Bot Md is Online 🕸\n\n");
+                console.log("Bot SUJAY is Online 😎\n\n");
                 //chargement des commandes 
                 console.log("Loading Bot Commands ...\n");
                 fs.readdirSync(__dirname + "/bmw").forEach((fichier) => {
@@ -850,8 +850,8 @@ zk.ev.on('group-participants.update', async (group) => {
 
                 let cmsg =`      ❒─❒⁠⁠⁠⁠ *BOT-IS-RUNNING* ❒⁠⁠⁠⁠─⁠⁠⁠⁠❒⁠⁠⁠⁠
 ╭❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠              
-❒⁠⁠⁠⁠ *Dev*   : *Baraka bega*   
-❒⁠⁠⁠⁠ *Bot*   : *Baraka md*
+❒⁠⁠⁠⁠ *Dev*   : *SUJAY 😎*   
+❒⁠⁠⁠⁠ *Bot*   : *SUJAY 😎*
 ❒⁠⁠⁠⁠ *Prefix*: [ ${prefixe} ]
 ╰❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠─❒⁠⁠⁠⁠`;
 
